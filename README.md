@@ -2,11 +2,11 @@
 This project aims is help to people solve their common problems and upgrade guidelines for any project.
 
 ## Frameworks
-* ### [React](React/Readme.md)
-* ### [React-Native](React-Native/Readme.md)
-* ### [Wordpress](Wordpress/Readme.md) 
+* ### [React(Coming Soon)](React/README.md)
+* ### [React-Native](React-Native/README.md)
+* ### [Wordpress(Coming Soon)](Wordpress/README.md) 
 
-## DevOps (Coming soon)
+## DevOps (Coming Soon)
 * ### Docker
 * ### Kubernetes
 * ### Amazon Web Services(AWS)
