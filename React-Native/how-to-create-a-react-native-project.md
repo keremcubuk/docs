@@ -252,7 +252,7 @@ Either way, you will need to prepare the device to run Android apps for developm
 
 If you have a physical Android device, you can use it for development in place of an AVD by plugging it in to your computer using a USB cable and following the instructions [here](running-on-device.md).
 
-### Using a virtual device
+### Using a virtual device
 
 If you use Android Studio to open `./AwesomeProject/android`, you can see the list of available Android Virtual Devices (AVDs) by opening the "AVD Manager" from within Android Studio. Look for an icon that looks like this:
 
