@@ -15,5 +15,5 @@ This document contains most using react-native npm packages _integration_ in pro
 
 ## [Platforms](Platforms/README.md)
 Common problems and updates for Android and iOS platforms.
-* ### [Android](Platforms/Android/README.md)
-* ### [iOS](Platforms/iOS/README.md)
+- ### [Android](Platforms/Android/README.md)
+- ### [iOS](Platforms/iOS/README.md)
