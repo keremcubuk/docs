@@ -12,6 +12,6 @@
 - numeral
 - jest
 - react-native-background-timer
-- react-native-fetch-blob
+- [react-native-fetch-blob](react-native-fetch-blob.md)
 - react-native-localize
 - react-native-webview
