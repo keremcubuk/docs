@@ -2,6 +2,7 @@
 - [Hermes](hermes.md)
 - [eslint](../HowToArticles/eslint.md)
 - [keyboardavoidingview](../HowToArticles/keyboardavoidingview.md)
+- [input - keyboard actions(submit-next-before)](../HowToArticles/keyboardActions.md)
 - react-native-navigation(wix)
 - react-navigation
 - async-storage
