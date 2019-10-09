@@ -23,14 +23,13 @@ npm install
 > Note: Before typing these command, you must kill all active nodes.
 
 <br>
-<br>
 
 ## Turkish
 React ve React Native projelerinin Windows ve Ubuntu makinelerde ngrok yükleme hatası alıyor ve npm install işlemi tamamlanamıyor. Aşağıda gördüğünüz bu hatadan kaynaklı projede npm install işlemi tamamlanamıyor.
 
 ![ngrok-error](/assets/images/ngrok-error.png)
 
-#### ÇÖZÜM:
+#### Çözüm:
 
 Aşağıdaki komutları sırasıyla çalıştırmanız gerekmektedir. Bu şekilde npm install işlemi yaptığınızda hata almayacaksınız.
 
