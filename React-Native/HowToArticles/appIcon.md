@@ -44,9 +44,11 @@ Drag and drop your icons with specific name and resolutions or you can copy all 
 Open your VSCode, go to `yourApp > android > app > src > main > res` folder. Copy all icon folders to under `android`, which you download from `makeappicon.com`.
 
 Android Folder:
+
 ![icons-folder](/assets/images/icons-folder.png)
 
 Android Folder Inside:
+
 ![android icons](/assets/images/android-icons.png)
 
 Copy these folders to under `yourApp > android > app > src > main > res` folder. After that just call this icon in `AndroidManifest.xml` file. The file path is `yourApp > android > app > src > main > AndroidManifest.xml`.
