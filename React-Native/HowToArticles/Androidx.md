@@ -1,20 +1,19 @@
 # AndroidX
 
-## AndroidX’e Ne Gerek Vardı?
-AndroidX projesi, Google’ın 2018 yılında piyasaya tanıttığı bir projedir. Bu anlamda, uygulama tasarlayanlar için AndroidX’in yeni bir kavram olduğunu söyleyebiliriz. Ben de uygulamamı kodlarken çözemediğim bir hata aldım ve araştırdığımda projemi çakışmalardan engellemek için AndroidX’e geçirmem gerektiğini farkettim. Böylece ileride de bahsedeceğim karmaşık kütüphane isimlerinden kurtulmuş oldum. Bu süreçte araştırma yaparken AndroidX hakkında pek Türkçe kaynak bulunmadığını farkettim ve giriş yazısı hazırlamaya karar verdim. Yazıma AndroidX’in tanımıyla başlamak istiyorum.
-
 ## AndroidX Nedir?
-AndroidX, temel olarak Android tarafından [Jetpack](https://developer.android.com/jetpack) içindeki kütüphaneleri
+AndroidX projesi, Google’ın 2018 yılında piyasaya tanıttığı bir projedir. Bu anlamda, uygulama tasarlayanlar için AndroidX’in yeni bir kavram olduğunu söyleyebiliriz. AndroidX, temel olarak Android tarafından [Jetpack](https://developer.android.com/jetpack) içindeki kütüphaneleri
 - geliştirmek,
 - test etmek,
 - paketlemek,
 - sürümlerini hazır hale getirmek,
-piyasaya sunmak amacıyla geliştirdiği açık kaynak kodlu bir projedir. En gelişmiş Jetpack componentlerini ve Support Library’i kapsar, daha gelişmiş halidir diyebiliriz.
+
+piyasaya sunmak amacıyla geliştirdiği açık kaynak kodlu bir projedir. En gelişmiş `Jetpack` componentlerini ve `Support Library`’i kapsar, daha gelişmiş halidir diyebiliriz.
 
 ![androidx-doc1](/assets/images/androidx-doc1.png)
 
 ## Jetpack Nedir?
-Jetpack, Android tarafından önerilen kütüphane, araç(tool)lardan oluşur ve geliştiricilerin daha yüksek kalitede, verimli ve hızlı çalışan programlar yazabilmesine olanak sağlar. Temel olarak 4 kategoriden oluşur:
+Jetpack, Android tarafından önerilen google kütüphanesidir, araç(tool)lardan oluşur ve geliştiricilerin daha yüksek kalitede, verimli ve hızlı çalışan programlar yazabilmesine olanak sağlar. Temel olarak 4 kategoriden oluşur:
+
 - Architecture
 - Foundation
 - UI
@@ -22,27 +21,29 @@ Jetpack, Android tarafından önerilen kütüphane, araç(tool)lardan oluşur ve
 
 Jetpack, AndroidX’in kütüphanelerini API’den ayrı olarak içerir. Böylece Jetpack geriye dönük uyumluluk sağlar ve Jetpack componentlerini en güncel sürümleriyle kullanabilmeyi sağlar.
 
-AndroidX’in Jetpack’ten farkı ise AndroidX’in bir kütüphane olmasıdır.
 ![android-jetpack](/assets/images/android-jetpack.png)
 
-
-Jetpack’in neden geliştirildiği ve ne amaçla kullanılabileceğini belirten Android Developers videosunu tavsiye ediyorum:
+Jetpack’in neden geliştirildiği ve ne amaçla kullanılabileceğini belirten Android Developers videosu:
 
 [![android-developers](https://img.youtube.com/vi/LmkKFCfmnhQ/0.jpg)](https://youtu.be/LmkKFCfmnhQ)
 
 ## AndroidX Neden Geliştirildi ?
-Support Library’nin eskimeye başlamasıyla beraber; Android, AndroidX’i piyasaya sürerek 2011 yılında piyasaya sürdüğü Support Library’i geliştirmeyi ve kullanılan kütüphane kavramına yeni bir bakış açısı getirmeyi hedefledi. Bunun temel sebeplerinden biri Support Library’nin sürekli olarak geliştirilse de kullanıcının kafasını karıştıran bazı sorunlar içermesiydi. Kullanıcılardan da gelen geri dönüşler doğrultusunda AndroidX geliştirilmiş oldu.
-### Support Library’den Farkları Nelerdir ?
-- Kütüphaneler, kendilerini kullanabilmek için gerekli olan en düşük API seviyesini belirtir. Buna örnek olarak support-v4 kütüphanesini verebiliriz. Burada “v4”, kütüphanenin desteklediği en düşük SDK sürümünü 4 olarak gösterir. Fakat güncel SDK sürümüyle olması gereken en düşük API seviyesi 16’dır. Kütüphane isimlerinde düzeltilmemiş/geliştirilmemiş olan API seviyeleri zamanla özellikle programcıların kafasını karıştırıyordu.
+Support Library’nin eskimeye başlamasıyla beraber;
+
+Android, `AndroidX`’i piyasaya sürerek 2011 yılında piyasaya sürdüğü, `Support Library`’i geliştirmeyi ve kullanılan kütüphane kavramına yeni bir bakış açısı getirmeyi hedefledi. Bunun temel sebeplerinden biri `Support Library`’nin sürekli olarak geliştirilse de kullanıcının kafasını karıştıran bazı sorunlar içermesiydi. Kullanıcılardan da gelen geri dönüşler doğrultusunda AndroidX geliştirilmiş oldu.
+
+### Support Library’den Farkları Nelerdir ?
+- Kütüphaneler, kendilerini kullanabilmek için gerekli olan en düşük API seviyesini belirtir. Buna örnek olarak, `support-v4` kütüphanesini verebiliriz. Burada `“v4”`, kütüphanenin desteklediği _en düşük_ SDK sürümünü 4 olarak gösterir. Fakat güncel SDK sürümüyle olması gereken _en düşük_ `API seviyesi 16’dır`. Kütüphane isimlerinde düzeltilmemiş/geliştirilmemiş olan API seviyeleri zamanla özellikle programcıların kafasını karıştırıyordu.
 - Aynı zamanda kütüphane isimleri çok uzuyor ve fazla kütüphane kullanımlarında okumayı zorlaştırıyordu. Bunlarla beraber her bir library için desteklenen (v4,v7,v13..) sürümleri bilmek zorunda kalmak hoş bir durum değildi. `Bu yüzden hepsini destekleyecek olan AndroidX sunuldu`.
 
-Support Library’nin sürümleriyle ilgili StackOverFlow’daki yazıyı tavsiye ediyorum:
+Support Library’nin sürümleriyle ilgili StackOverFlow konusu:
 
 https://stackoverflow.com/questions/18271429/difference-between-android-support-v7-appcompat-and-android-support-v4
 
-- Support Library kullanıldığında, kütüphaneler aynı versiyon üzerinde çalışmak zorundadırlar. Aksi durumda programcı hata alacaktır. AndroidX’in gelmesiyle beraber bu bağımlılık ortadan kalkmış durumda.
+- Support Library kullanıldığında, kütüphaneler aynı versiyon üzerinde çalışmak zorundadırlar. AndroidX’in gelmesiyle beraber bu bağımlılık ortadan kalkmış durumda.
 
 Örnek olarak:
+
 ```java
 'com.android.support:support-compat:28.0.0'
 'com.android.support:recyclerview-v7:28.0.0'
