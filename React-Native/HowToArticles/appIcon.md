@@ -38,5 +38,39 @@ Drag and drop your icons with specific name and resolutions or you can copy all 
 
 ![xcode-icon](/assets/images/xcode-icon-3.png)
 
-### Android
+<br/>
 
+### Android
+Open your VSCode, go to `yourApp > android > app > src > main > res` folder. Copy all icon folders to under `android`, which you download from `makeappicon.com`.
+
+Android Folder:
+![icons-folder](/assets/images/icons-folder.png)
+
+Android Folder Inside:
+![android icons](/assets/images/android-icons.png)
+
+Copy these folders to under `yourApp > android > app > src > main > res` folder. After that just call this icon in `AndroidManifest.xml` file. The file path is `yourApp > android > app > src > main > AndroidManifest.xml`.
+
+```xml
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.yourApp">
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher" /* your icon paths and names */
+      android:roundIcon="@mipmap/ic_launcher_round" /* your icon paths and names */
+      android:allowBackup="false"
+      android:theme="@style/AppTheme">
+
+        <!-- Your <activity> codes -->
+    </application>
+
+</manifest>
+```
+
+> Important Note: If you get two icons on Android Emulator, read this [document.](/React-Native/UpgradeGuidelines/CommonErrors/two-apps-icon.md)
+
+##### Final Result:
+
+![android-icon](/assets/images/android-icon-preview.png)
