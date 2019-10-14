@@ -8,7 +8,7 @@ After Androidx release on May 8, 2018. We can see this error on React Native > 0
 
 ### To solve problem:
 
-#### android.support.v7.app
+#### - Appcompat type
 Old usage:
 ```java
 import android.support.v7.app.AlertDialog;
@@ -17,4 +17,29 @@ import android.support.v7.app.AlertDialog;
 New usage:
 ```java
 import androidx.appcompat.app.AlertDialog;
+```
+<br/>
+
+#### - Core type
+Old usage:
+```java
+import android.support.v7.app.NotificationCompat;
+```
+
+New usage:
+```java
+import androidx.core.app.NotificationCompat;
+```
+
+<br/>
+
+#### - Annotation type
+Old usage:
+```java
+import android.support.annotation.Nullable;
+```
+
+New usage:
+```java
+import androidx.annotation.Nullable;
 ```
