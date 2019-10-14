@@ -2,7 +2,7 @@
 ## What is hermes?
 Hermes is a JavaScript engine designed for Android platform by Facebook Engineers on July 21, 2019.  It’s a small and lightweight optimized for running React Native on Android. 
 
-> `Important Note:` This technology only use after react-native 0.60.4 and laters.
+> `Important Note:` This technology only use after react-native 0.60.4 version.
 
 ## How does it work?
 
