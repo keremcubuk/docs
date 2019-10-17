@@ -1,5 +1,8 @@
 # Dependency failing: io.perfmark:perfmark-api:0.16.0 -> com.google.errorprone:error_prone_annotations@[2.3.2,2.3.3], but error_prone_annotations version was 2.3.2.
 
+
+![error-grpc](/assets/images/error-grpc.png)
+
 ## Error:
 
 ```powershell
