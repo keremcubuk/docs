@@ -38,6 +38,11 @@ Apple, requires the use of `V8 JavaScript engine` on their devices. For this rea
   ]
 ```
 
+Also, if you're using ProGuard, you will need to add this rule in proguard-rules.pro :
+```javascript
+-keep class com.facebook.hermes.unicode.** { *; }
+```
+
 ```java
 // You must clean and rebuild after can the gradle files.
 
@@ -45,6 +50,11 @@ Apple, requires the use of `V8 JavaScript engine` on their devices. For this rea
 ```
 
 > `Note:` If you do not clean up your project after making changes, your application may experience a constant crash during the opening.
+
+That's it! Last step for starting your app:
+```java
+  react-native run-android
+```
 
 
 ## For more details:
