@@ -2,7 +2,8 @@
 This repository has been archived by the owner. Because of these we are using [rn-fecth-blob](https://github.com/joltup/rn-fetch-blob) library forked by [joltup](https://github.com/joltup).
 
 ## Why we are using?
-We are using this library for services response and sending large files(video, image etc.) 
+We are using this library for services response and sending large files(video, image etc.)
+
 ## Where we are using?
 We are using under utils and services folders in our projects.
 > For Example: app > services > serviceUtils.js
