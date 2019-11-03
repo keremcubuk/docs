@@ -15,8 +15,8 @@ When you rebuild you can see this error:
 
 If you see differences with your library version, you can take this error. Because, react-native only works with compatible versions.
 
-```shell
-// **myapp** _package.json_
+```js
+// myapp package.json
 
    dependencies: {
       react-native: 61.1.3,
@@ -24,8 +24,8 @@ If you see differences with your library version, you can take this error. Becau
 
 ```
 
-```shell
-// **my child library** _package.json_
+```js
+   // my child library package.json
 
    dependencies: {
       react-native: 59.1.0,
