@@ -48,3 +48,5 @@ export function* logoutHandler() {
 ```
 
 Thanks to this usage you can send your user to Login screen. Happy Coding <3
+
+Reference: https://github.com/react-navigation/react-navigation/issues/1439#issuecomment-340293063
