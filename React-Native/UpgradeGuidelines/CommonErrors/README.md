@@ -6,3 +6,4 @@
 - [Two Apps Icon - Android](two-apps-icon.md)
 - [Dependency failing: io.perfmark:perfmark-api:0.16.0](error-google-dep.md)
 - [appRegistry callable module](appRegistryError.md)
+- [React Navigation iOS Crash on Release Mode - RNGestureHandler](react-navigation-crash.md)
