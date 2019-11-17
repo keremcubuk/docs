@@ -38,6 +38,7 @@ export default class App extends Component {
 Inject your navigatorRef to your saga.
 
 ```javascript
+// saga.js
 export function* logoutHandler() {
     const resetAction = StackActions.reset({
       index: 0,
