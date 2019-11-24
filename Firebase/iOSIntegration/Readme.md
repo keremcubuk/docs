@@ -58,10 +58,10 @@ First of all, go to [firebase console](https://console.firebase.google.com/). An
 
     ![step-5](step-5.png)
 
-7. Run your app. After complete the verification click to `Continue to Console` button.
+8. Run your app. After complete the verification click to `Continue to Console` button.
 
     ![step-6](step-6.png)
 
-7. Your app added to Firebase successfully!
+9. Your app added to Firebase successfully!
 
     ![step-7](step-7.png)
