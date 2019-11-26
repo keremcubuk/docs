@@ -1,6 +1,9 @@
 # Creating a new Firebase Project
 
-Especially, for your mobile apps. You need a follow statics of users usage of your apps. For the solution of this problem, you should use Firebase. And then, let's start to creating a new firebase project.
+Firebase is a technology which gives you a lot of features for develop your mobile and web apps. 
+## Why we need Firebase?
+Firebase is the most used platform for mobile app development. It is especially geared towards business apps, with the intention of helping businesses grow their user bases and increase their profits through their mobile apps. The best features of Firebase is the Analytics dashboard that it comes integrated with.
+
 
 1. `Go to Firebase console` wtih this [link](https://console.firebase.google.com).
 
@@ -18,7 +21,7 @@ Especially, for your mobile apps. You need a follow statics of users usage of yo
 
     ![google-analytics](ga.png)
 
-5. In the creating step 3, we have to `Configure Google Analytics`. If you have an account just select it and click the `Create Project` button. Well, ıf you don't have an Google Analytics account, you should create a new one.
+5. In creating step 3, we have to `Configure Google Analytics`. If you have an account just select it and click the `Create Project` button. Well, ıf you don't have an Google Analytics account, you should create a new one.
 
     ![select-account](select-account.png)
 
