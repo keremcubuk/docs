@@ -56,4 +56,39 @@ iOS ve Android cihazlarda webview debug biraz farklı ve zahmetlidir. Bu yüzden
 ## iOS Platformu
 Webview browser olarak, iOS işletim sistemleri cihazlarda `Safari` kullanmaktadır. Bu sayede web sayfalarını yüklemektedir. Debug ederkende MacOsX bilgisayarımızın safari uygulamasını kullanacağız.
 
+1. Bilgisayarınızdan `Safari` uygulamasını açın.
+2. Safari'yi açtıktan sonra `Preferences`'a tıklayın ve açılan pencereden `Advanced` tabını seçin. Daha sonra en altta bulunan "Show Develop menu in menu bar" checkbox'ı işaretleyin.
+3. iOS uygulamanızı başlatın ve webview sayfasını açın.
+4. Safari açıkken yukarıdaki araç çubuğundan `Safari -> Develop -> [device name] -> [app name] -> [url - title]` seçiniz. Ve artık Debug etmeye hazırsınız.
+
+> **Not:** Cihaz üzerinde debug etmek için `Web Inspector`'u aktif hale getirmeniz gerekmektedir. <br/> `Settings -> Safari -> Advanced -> Web Inspector`
+
+<br/>
+<br/>
+
 ## Android Platformu
+
+Android işletim sisteminde webview default olarak android'in stock browserını kullanmaktadır veya custom browser'ı kullanır(Chrome, Samsung Internet vs.). Bilgisayarınızda Webview `Chrome` browser üzerinden debug edilir. 
+
+1. İlk olarak aşağıdaki kod bloğunu `MainApplication.java` dosyasına eklemeniz gerekmektedir, çünkü debug edebilmek için Android cihazlarda aktif hale getirir.
+
+```java
+  import android.webkit.WebView;
+
+  @Override
+  public void onCreate() {
+    super.onCreate();
+	  ...
+    WebView.setWebContentsDebuggingEnabled(true);
+  }
+```
+
+2. Ekleme işlemi tammamlandıktan sonra Android uygulamanızı başlatın.
+3. Chrome browser'ınızı açın. Ve şu adımları takip edin. `Chrome -> DevTools -> Menu (3 dots) -> More tools -> Remote devices`.
+4. Android cihazını seçin ve "Inspect" butonuna basın. Artık Webview'ı debug etmeye hazırsınız.
+
+> **Not:**
+Cihaz üzerinde debug etmek için `USB Debugging`'i aktif etmeniz gerekmektedir. <br/>
+`Settings -> System -> About Phone -> Developer options -> enable USB debugging`.
+
+![android-debug](android-debug.png)
