@@ -1,14 +1,18 @@
 # Fresco Nedir?
 
+![fresco](fresco-logo.png)
+
 Fresco, facebook tarafından 2015 yılında geliştirilmiş ve tamamen açık kaynak olarak sunulan, image ve giflerin oynatılmasını sağlayan bir Android kütüphanesidir. 
+
 
 ## Neden Geliştirildi?
 
 Facebook mühendisleri `News Feed(Haber Kaynağı)` ekranında gösterilen resimlerin daha hızlı ve çözünürlüğü bozulmadan yüklemekte problemler yaşıyorlardı. Buna ek olarak resimlerin çözünürlüklerinin yüksek olması otomatik olarak Android cihazlarda ki `RAM yetmezliğine` neden oluyordu. Bunun üzerine Facebook mühendisleri `Fresco` kütüphanesini yazmaya karar verdiler. Ve Mart 2015 tarihinde, `Android 2.3(GingerBread) ve üzerini` destekleyen image kütüphanesi [Fresco](https://engineering.fb.com/android/introducing-fresco-a-new-image-library-for-android/) doğdu.
 
-![memory](memory.png)
 
 Fresco özünde, resimleri kendi yöntemiyle cacheleyerek, memory problemlerini önlemeye çalışıyor. Web sayfalarındaki lazy loading yapısına çok benzer bir şekilde, sadece görüntülenen görselleri arayüze yükleyerek bellek şişmesini engelliyor.
+
+![memory](memory.png)
 
 Bütün bunlara ek olarak, load mekanizması için çeşitli propertyler set edebilirsiniz. Bunun yanında görsel öğeler için Scaling, Placeholder, Rotation, Resizing gibi bir çok özelliği de kullanabilirsiniz.
 
