@@ -11,3 +11,4 @@
 - [RNN imageWithTintColor:renderingMode](rnn-rendering-mode.md)
 - [Xcode 11 - "App" has not been registered](hasNotBeenRegistered/Readme.md)
 - [spawnSync ./gradlew EACCES error](spawnSyncGradle/Readme.md)
+- [Property "Reflect" does not exist react-native hermes](Reflect/Readme.md)
