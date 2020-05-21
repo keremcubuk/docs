@@ -22,12 +22,17 @@ This document contains most using react-native npm packages _integration_ in pro
 -   [async-storage](https://github.com/react-native-community/async-storage)
 -   [native-base](https://nativebase.io/)
 
-<br/>
+---
 
 ## [Common Errors](UpgradeGuidelines/CommonErrors/README.md)
 This document helps to find solutions about the common problems.
 
-<br/>
+---
+
+## [Scripts](Scripts/ChangeBundle.md)
+This document helps to find react-native scripts
+
+---
 
 ## [Platforms](Platforms/README.md)
 Common problems and updates for Android and iOS platforms.
