@@ -8,3 +8,4 @@
 - [React Native Webview Debugging](WebviewDebug/Readme.md)
 - [React Native Fresco Nedir?](Fresco/Readme.md)
 - [React Native Local Notification](RNLocalNotification/Readme.md)
+- [AndroidManifest Details](AndroidManifest/Readme.md)
