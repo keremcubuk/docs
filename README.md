@@ -16,5 +16,11 @@ Everything about the Firebase. Just follow the [link](Firebase/Readme.md).
 * ### Kubernetes
 * ### Amazon Web Services(AWS)
 
+
+## Others
+* ### [Slack](Slack/Readme.md)
+
+---
+
 > Note: These notes are writed based on personal experiences and problems.
 
